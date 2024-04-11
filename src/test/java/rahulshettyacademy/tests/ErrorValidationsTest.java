@@ -21,7 +21,7 @@ public class ErrorValidationsTest extends BaseTest {
 	@Test(groups= {"ErrorHandling"},retryAnalyzer=Retry.class)
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 
-	
+	//Comments to test CICD
 		landingPage.loginApplication("goverdhanbandari04@gmail.com", "Iamki000");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 
